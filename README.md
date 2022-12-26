@@ -1,2 +1,2 @@
-# cocoatalk
+# Kokoatalk Clone Coding
 First project
