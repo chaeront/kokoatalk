@@ -1,0 +1,67 @@
+.welcome-header {
+    margin: 90px 0px;
+    /* 위|아래로는 90px씩 공간을 주고, 좌|우로는 안 띄우겠다는 뜻 */
+    text-align: center;
+    /* 글자들이 전부 가운데 정렬이기 때문에 설정*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* flex box를 사용해서 title과 text 부분을 일열로 나열하되, 양 옆으로 나열되는 것이 아니라, 위|아래로 나열되길 바라니까
+        direction: column 속성을 사용해서 축을 바꿔주는 동시에, 글자를 박스 형태로 바꿔주었기 때문에 위에서 설정한 정렬이
+        text-align(글자 정렬)이기 때문에 더 이상 적용되지 않아서, align-items(박스 정렬) 속성으로 가운데 정렬을 다시 한다. 
+    */
+}
+
+.welcome-header__title {
+    margin-bottom: 20px;
+    /* 타이틀 Welcome~과 텍스트 If you~ 사이에 간격이 있기 때문에 margin-bottom 속성을 사용하여 간격을 준 것이다. */
+    font-size: 25px;
+    /* 타이틀인 Welcome~ 글자가 더 크기 때문에 사이즈를 크게 지정 */
+}
+
+.welcome-header__text {
+    width: 60%;
+    /* 최종 결과물을 보면 글자가 계속 이어져 있지 않고 2줄로 잘렸기에 적당한 넓이를 정해줘서 그 넓이 이상 글자가 있게 되면,
+        자동으로 다음 줄로 넘어갈 수 있도록 설정
+    */
+    color: gray;
+    /* 최종 결과물을 보면 텍스트 If you~ 부분은 글자색이 회색이라 설정 */
+}
+
+#login-form {
+    display: flex;
+    flex-direction: column;
+    margin:0px 30px;
+}
+
+#login-form input {
+    border: none;
+    padding:15px 0px;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+#login-form input:not([type="submit"]) {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    transition: border-color 0.3s ease-in-out;
+}
+
+#login-form input::placeholder {
+    color: rgba(0, 0, 0, 0.4);
+}
+#login-form input:focus {
+    border-color:var(--yellow);
+}
+
+#login-form input[type="submit"] {
+    background-color: var(--yellow);
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#login-form a {
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+    font-size: 13px;
+}
