@@ -1,0 +1,118 @@
+/*
+    문제1]이미지와 텍스트를 일렬로 나열하자
+        .user-component {
+            display: flex;
+        }
+        -> 이렇게만 작성했을 때 이미지와 텍스트가 정렬되어 보이지 않는 이유는,
+        -> 현재 <div class="user-component"> 안에는 큰 div 태그가 2개 있는데,
+        -> 1. <div class="user-componet_column"></div> (왼쪽에 정렬할 [사진 + 텍스트] div)
+        -> 2. <div class="user-componet_column"></div> (오른쪽에 정렬할 [부가적인 내용] div)
+        -> 즉, user-component에 flex를 설정해준 것이기 때문에 1번 div 태그랑 2번 div 태그가 정렬이 된 것이다.
+        -> 그렇기 때문에, 1번 div 태그 안에 있는 2개의 콘텐츠 [사진], [텍스트]를 나열하고 싶다면
+        -> 2개의 user-component__column 중 첫 번째 아이(사진 + 텍스트)를 나열하겠다고 또 다시 flex를 지정해주면 된다.
+
+        .user-component__column:first-child {
+            display: flex;
+        }
+
+    문제2]사진을 작게 만들자
+    문제3]
+*/
+
+.user-component {
+    justify-content: space-between;
+}
+
+.user-component__favorites {
+
+}
+
+.user-component__favorites--column {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.user-component__multi--content {
+    display: flex;
+    padding-right: 10px;
+}
+
+.user-component,
+.user-component__column:first-child {
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+}
+
+.user-component__avatar {
+    width: 70px;
+    height: 70px;
+    border-radius: 30px;
+    margin-right: 20px;
+}
+
+.user-component__title {
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.user-component__subtitle {
+    margin-top: 8px;
+    font-size: 17px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.user-component__avatar--xl {
+    width: 80px;
+    height: 80px;
+}
+
+.user-component__avatar--sm {
+    width: 60px;
+    height: 60px;
+    border-radius: 25px;
+}
+
+.user-component__multi--avatar {
+    margin-top: 14px;
+    width: 60px;
+    height: 60px;
+    border-radius: 25px;
+}
+
+.user-component__title--not-bold {
+    font-weight: 400;
+}
+
+.user-component__column:last-child {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.user-component__multi--text1 {
+    margin-top: 5px;
+    color: pink;
+    font-size: 15px;
+    text-align: center;
+}
+
+.user-component__multi--text2 {
+    margin-top: 5px;
+    color: skyblue;
+    font-size: 15px;
+    text-align: center;
+}
+
+.user-component__multi--text3 {
+    margin-top: 5px;
+    color: rebeccapurple;
+    font-size: 15px;
+    text-align: center;
+}
+
+.user-component__multi--column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 25px;
+}

@@ -1,0 +1,53 @@
+#friends-display-link {
+    /* a태그는 inline 태그이기 때문에 정렬을 해주려면 바꿔줘야 한다. */
+    display: block;
+    text-align: center;
+    background-color: #fafafa;
+    padding: 10px 0px;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+#friends-display-link i {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.friends-screen {
+    padding: 0px var(--horizontal-space);
+}
+
+.user-component__multi {
+    margin-top: 25px;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    padding-top: 15px;
+}
+
+.user-component__multi--header {
+    margin-bottom: 10px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.friends-screen__favorites {
+    margin-top: 25px;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    padding-top: 15px;
+}
+.friends-screen__channel {
+    margin-top: 25px;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    padding-top: 15px;
+}
+
+.friends-screen__favorites--header {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.friends-screen__channel-header {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    color: rgba(0, 0, 0, 0.5);
+}
