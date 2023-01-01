@@ -23,14 +23,11 @@
     justify-content: space-between;
 }
 
-.user-component__favorites {
-
-}
-
 .user-component__favorites--column {
     display: flex;
     align-items: center;
     margin-bottom: 10px;
+    margin-top: 25px;
 }
 
 .user-component__multi--content {
