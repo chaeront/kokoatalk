@@ -27,6 +27,10 @@
     align-items: center;
 }
 
-.status-bar__column .fa-battery-quarter, .fa-battery-full {
+.status-bar__column .fa-battery-quarter, 
+.fa-battery-full,
+.fa-battery-three-quarters,
+.fa-battery-three-quarter,
+.fa-battery-half {
     margin: 0px 5px;
 }

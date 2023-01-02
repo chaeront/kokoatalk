@@ -19,23 +19,23 @@
 
 .user-component__multi {
     margin-top: 25px;
-    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    border-top: var(--main-border);
     padding-top: 15px;
 }
 
 .user-component__multi--header {
     margin-bottom: 10px;
-    color: rgba(0, 0, 0, 0.5);
+    color: var(--main-color);
 }
 
 .friends-screen__favorites {
     margin-top: 25px;
-    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    border-top: var(--main-border);
     padding-top: 15px;
 }
 .friends-screen__channel {
     margin-top: 25px;
-    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    border-top: var(--main-border);
     padding-top: 15px;
 }
 
@@ -43,12 +43,12 @@
     margin-bottom: 10px;
     display: flex;
     justify-content: space-between;
-    color: rgba(0, 0, 0, 0.5);
+    color: var(--main-color);
 }
 
 .friends-screen__channel-header {
     margin-bottom: 10px;
     display: flex;
     justify-content: space-between;
-    color: rgba(0, 0, 0, 0.5);
+    color: var(--main-color);
 }
