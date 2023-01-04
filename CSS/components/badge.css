@@ -9,3 +9,17 @@
     color: white;
     font-weight: 600;
 }
+
+.badge2 {
+    background-color: tomato;
+    margin-left: 5px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 600;
+    font-size: 12px;
+}
