@@ -10,7 +10,10 @@
     width: 33%;
 }
 
-.alt-header__title {
+.alt-header__title {                               
+    overflow:hidden;
+    white-space: nowrap;
+    text-overflow:ellipsis;
     font-size: 28px;
     font-weight: 600;
 }
